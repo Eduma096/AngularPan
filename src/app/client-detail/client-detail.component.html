@@ -1,0 +1,8 @@
+<div class="container" *ngIf="(client$ | async) as client">
+    <div class="avatar">
+        <button mat-button (click)="onBack()"><i class="icon icon-voltar"></i></button>
+        <img matListAvatar src="https://avatarfiles.alphacoders.com/782/78200.png" alt="...">
+    </div>
+    <h2>{{client.nome}}</h2>
+    <p>CPF: {{client.cpf | cpf}}</p>
+</div>

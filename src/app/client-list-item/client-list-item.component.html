@@ -1,0 +1,5 @@
+<mat-list-item (click)="onSelection($event)">
+    <p matLine>{{client.nome}}</p>
+    <h3 matLine>{{client.email}}</h3>
+    <p matLine>{{client.cpf | cpf}}</p>
+</mat-list-item>
