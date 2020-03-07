@@ -15,6 +15,8 @@ import { ClientDetailComponent } from './client-detail/client-detail.component';
 import { CpfPipe } from './pipe/cpf.pipe';
 import { BuscaPipe } from './pipe/busca/busca.pipe';
 import { DateformatDirective } from './diretivas/dateformat.directive';
+import { IsCPFPipe } from './pipe/is-cpf.pipe';
+import { CpfFormatDirective } from './diretivas/cpf-format.directive';
 
 registerLocaleData(localePt, 'pt');
 
@@ -27,7 +29,9 @@ registerLocaleData(localePt, 'pt');
     ClientDetailComponent,
     CpfPipe,
     BuscaPipe,
-    DateformatDirective
+    DateformatDirective,
+    IsCPFPipe,
+    CpfFormatDirective
   ],
   imports: [
     BrowserModule,

@@ -11,10 +11,7 @@ const routes: Routes = [
     children:[
       {path: '', component: TransacoesComponent},
       {path: 'beneficios', component: BeneficiosComponent},
-      {
-        path: 'historico',
-        component: HistoricoComponent
-      },
+      {path: 'historico', component: HistoricoComponent},
     ]
   },
   {
@@ -22,17 +19,10 @@ const routes: Routes = [
     children:[
       {path: '', component: TransacoesComponent},
       {path: 'beneficios', component: BeneficiosComponent},
-      {
-        path: 'historico',
-        component: HistoricoComponent
-      },
+      {path: 'historico', component: HistoricoComponent},
     ]
   },
-  {
-    path: '',
-    redirectTo: '/transacoes',
-    pathMatch: 'full'
-  },
+  {path: '', redirectTo: '/transacoes', pathMatch: 'full'},
   {path: '**', component: TransacoesComponent}
 ];
 
